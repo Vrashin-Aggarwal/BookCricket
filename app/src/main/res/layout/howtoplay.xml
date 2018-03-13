@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/background"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="WELCOME to the game of BookCricket"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="\n* Book Cricket is a two player game in which you can either play with CPU or with another player.
+        \n\n* Click FLIP PAGE button or SWIPE the screen right to left to flip the pages and look for the page number.
+        \n\n* The player should always look for the side of book which has even numbers on it.
+        \n\n* In the opened page, look for the even number and take note of the last unit in that number.
+        \n\n* For Example: If the opened page is 154, then the last unit is 4 so the score is 4.
+        \n\n* So the possible scores are 2, 4, 6, 8 and 0.
+        \n\n* 2, 4 and 6 score will be added to the player's score as such and 8 will be a dot ball.
+        \n\n* 0 score means the batsman is out.
+        \n\n* The innings will go on until all the wickets fall.
+        \n\n* You can  change maximum pages of the book and maximum wickets in hand through settings.\n"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="REJOICE YOUR CHILDHOOD MEMORIES WITH THIS EXCITING GAME. BEST OF LUCK!!"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gamescreen"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="155.0dip"
+                android:layout_height="wrap_content"
+                android:text="CPU"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="155.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="SCORE"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/p1score"
+                android:layout_width="155.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="40.0dip"
+                android:text="@string/cpuscore"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="155.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60.0dip"
+                android:text="WICKETS"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/p1wick"
+                android:layout_width="155.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="80.0dip"
+                android:text="@string/cpuwick"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="50.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="50.0"
+                android:gravity="right"
+                android:text="PLAYER"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/p2score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:layout_weight="50.0"
+                android:gravity="right"
+                android:text="SCORE"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/player2score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="40.0dip"
+                android:layout_weight="50.0"
+                android:gravity="right"
+                android:text="@string/playerscore"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60.0dip"
+                android:layout_weight="50.0"
+                android:gravity="right"
+                android:text="WICKETS"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/player2wick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="80.0dip"
+                android:layout_weight="50.0"
+                android:gravity="right"
+                android:text="@string/playerwick"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leftpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="8.03"
+            android:text="@string/leftpage"
+            android:textSize="50.0sp" />
+
+        <TextView
+            android:id="@+id/rightpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_weight="6.25"
+            android:text="@string/rightpage"
+            android:textSize="50.0sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnflip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/btnflip"
+        android:textColor="#ffffffff"
+        android:textSize="25.0sp" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2230158781233514/9232189430">
+
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

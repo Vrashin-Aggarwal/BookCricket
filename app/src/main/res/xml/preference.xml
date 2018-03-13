@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="PLAY SETTINGS" >
+        <ListPreference
+            android:entries="@array/pages"
+            android:entryValues="@array/noofpages"
+            android:key="pages"
+            android:summary="@string/setpages"
+            android:title="@string/pagesettings" />
+        <ListPreference
+            android:entries="@array/wickets"
+            android:entryValues="@array/noofwickets"
+            android:key="wickets"
+            android:summary="@string/setwickets"
+            android:title="@string/wicketsettings" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

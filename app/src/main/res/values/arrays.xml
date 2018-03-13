@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pages">
+        <item name="100">100 pages</item>
+        <item name="200">200 pages</item>
+        <item name="500">500 pages</item>
+    </string-array>
+    <string-array name="noofpages">
+        <item name="100">100</item>
+        <item name="200">200</item>
+        <item name="500">500</item>
+    </string-array>
+    <string-array name="wickets">
+        <item name="5">5 wickets</item>
+        <item name="10">10 wickets</item>
+    </string-array>
+    <string-array name="noofwickets">
+        <item name="5">5</item>
+        <item name="10">10</item>
+    </string-array>
+     <string-array name="sounds">
+        <item name="on">Sound On</item>
+        <item name="off">Sound Off</item>
+    </string-array>
+    <string-array name="soundstate">
+        <item name="on">on</item>
+        <item name="off">off</item>
+    </string-array>
+
+</resources>

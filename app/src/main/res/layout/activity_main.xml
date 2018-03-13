@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    android:background="@drawable/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_gravity="center_vertical|center_horizontal">
+            <Button
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/btnplayer1"
+                android:background="@drawable/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/btnplayer1"
+                android:elevation="1dp" />
+            <Button
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/btnplayers2"
+                android:background="@drawable/custom_button"
+                android:layout_below = "@+id/btnplayer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="25dp"
+
+                android:text="@string/btnplayers2"
+                android:layout_weight="0.11" />
+            <Button
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/btnhowtoplay"
+                android:background="@drawable/custom_button"
+                android:layout_below = "@+id/btnplayers2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="25dp"
+
+                android:text="@string/btnhowtoplay"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/btnsettings"
+                android:background="@drawable/custom_button"
+                android:layout_below = "@+id/btnhowtoplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="25dp"
+
+                android:text="@string/btnsettings" />
+            <Button
+                android:textSize="25.0sp"
+                android:textColor="#ffffffff"
+                android:id="@+id/btnexit"
+                android:background="@drawable/custom_button"
+                android:layout_below = "@+id/btnsettings"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="25dp"
+
+                android:text="@string/btnexit" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2230158781233514/9232189430">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
